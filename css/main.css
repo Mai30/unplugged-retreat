@@ -99,20 +99,68 @@ textarea {
    ========================================================================== */
 
    /* ------------ General Styles  --------------- */
-   .content-wrapper {
-     width: 90%;
-     margin: 0;
-     padding: 0 20px;
-   } 
+  html {
+    font-size: 16px;
+  }
+   
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    text-align: left;
+  }
+   
+  ul, 
+  ol {
+    list-style-type: none;
+  }
+   
+  a {
+    color: #e2e3ed;
+    text-decoration: none;
+  } 
+
+  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+  }
+     
+  h3, 
+  h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+    margin: 20px 0;
+  }
+    
+  p {
+    font-size: .875em;
+    line-height: 1.285em;
+  }
+   
+  img {
+   
+  }
+   
+  figure {
+   
+  }
+   
+  address {
+   font-style: normal;
+  }
+
+  .content-wrapper {
+    width: 90%;
+    margin: 50px 0;    
+  } 
   
 
  /* -------------------- Base Header - Footer Styles -------------------- */
  header,
  footer {
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
  }
 
  /* Header ----- */
@@ -125,11 +173,12 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 0;
  }
 
  .header-divider {
-  width: 80%;
-  padding: 20px 0;
+  width: 90%;
+  padding: 10px 20px;
  }
 
  header nav {
@@ -147,9 +196,17 @@ textarea {
  }
 
  /* Footer ----- */
+footer {
+  flex-direction: column;
+}
+
  footer .content-wrapper {
   width: 55%;
-  margin: 50px 0
+  margin: 50px 0;
+ }
+
+ footer .contact {
+   margin-bottom: 50px;
  }
 
  footer .social-icons {
