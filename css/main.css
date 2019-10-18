@@ -98,96 +98,99 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-   /* ------------ General Styles  --------------- */
-  html {
-    font-size: 16px;
-  }
-   
-  body {
-    color: #e2e3ed;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    text-align: left;
-  }
-   
-  ul, 
-  ol {
-    list-style-type: none;
-  }
-   
-  a {
-    color: #e2e3ed;    
-    text-decoration: none;
-  } 
-
-  h2 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.875em;
-    font-weight: 500;
-  }
-     
-  h3, 
-  h4 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.125em;
-    font-weight: 500;
-    margin: 20px 0;
-  }
-    
-  p {
-    font-size: .875em;
-    line-height: 1.285;
-  }
-   
-  img {
-   width: 100%;
-  }
-   
-  figure {
-   margin: 0;
-  }
-   
-  address {
-   font-style: normal;
-  }
-
-  .content-wrapper {
-    width: 90%;
-    margin: 50px 0;    
-  } 
+  /* ------------ General Styles  --------------- */
+html {
+  font-size: 16px;
+}
   
+body {
+  color: #e2e3ed;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  text-align: left;
+}
+  
+ul, 
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+  
+a {
+  color: #e2e3ed;    
+  text-decoration: none;
+} 
 
- /* -------------------- Base Header - Footer Styles -------------------- */
- header,
- footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    background-color: #202322;
- }
+h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.875em;
+  font-weight: 500;
+  margin: 0;
+}
+    
+h3, 
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 20px 0;
+}
+  
+p {
+  font-size: .875em;
+  line-height: 1.285;
+}
+  
+img {
+  width: 100%;
+}
+  
+figure {
+  margin: 0;
+}
+  
+address {
+  font-style: normal;
+}
 
- /* Header ----- */
- header {
-   padding: 15px 0;
- }
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;    
+} 
 
- header .content-wrapper {
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #202322;
+}
+
+/* Header ----- */
+header {
+  padding: 15px 0;
+}
+
+header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
- }
+}
 
- .header-divider {
+.header-divider {
   background: #3a3a3a; 
   height: 1px;
   margin: 10px 20px;
   width: 100%;    
- }
+}
 
- header figure {
+header figure {
   width: 60%;
   display: flex;
   justify-content: center;
@@ -195,7 +198,7 @@ textarea {
   flex-flow: row wrap;
 }
 
- header nav {
+header nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -204,52 +207,60 @@ textarea {
   font-weight: 700;
   text-transform: uppercase;
   width: 60%;
- }
+}
 
- header nav ul {
+header nav ul {
   display: flex;
   justify-content: space-around; 
   width: 100%; 
- }
+}
 
- header nav ul li {
+header nav ul li {
   font-size: 1.125em;
 }
 
- /* Footer ----- */
+/* Footer ----- */
 footer {
   flex-direction: column;
   text-align: center;
 }
 
- footer .content-wrapper {
+footer .content-wrapper {
   width: 55%;
   margin: 50px 0;
- }
+}
 
- footer .contact {
-   margin-bottom: 50px;
- }
+footer .contact {
+  margin-bottom: 50px;
+}
 
- footer .social-icons {
+footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
- }
+}
 
- footer .social-icons p {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
- }
- 
-  footer p {
-    margin: 0;
-  }
+  background-color: #527158; 
+  border-radius: 50%;  
+  height: 40px;   
+  width: 40px;
+}
 
-  footer .copyright {
-    margin: 20px 0;
-  }
+footer .social-icons p i {
+  font-size: 1.3125em;
+}
+
+footer p {
+  margin: 0;
+}
+
+footer .copyright {
+  margin: 20px 0;
+}
   
  /* ---------- Mobile styles --------- */
 
@@ -329,6 +340,11 @@ input[type=button] {
   margin-bottom: 60px;
 }
 
+.features i {
+	font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
 .features p {
   margin: 0;
   text-align: center;
@@ -338,7 +354,7 @@ input[type=button] {
 .reviews {
   display: flex;
   justify-content: center;  
-  flex-flow: row wrap;
+  flex-flow: row wrap; 
   background-color: #2a423a;
 }
 
@@ -590,7 +606,11 @@ input[type=button] {
   }
 
   .features h2 {
-    margin: 0 20px;
+    margin: 0 20px 20px 0;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
   
   /* Reviews */
@@ -599,13 +619,13 @@ input[type=button] {
     justify-content: space-between;
   }
 
-  .reviews article div {    
+  .reviews article figure,
+  .reviews article div {
     width: 49%;
   }
 
-  .reviews h3 {
-    width: 75%;
-    margin: 0;
+  .reviews h2 {
+    width: 90%;  
   }
 
   .reviews h3 {
@@ -687,6 +707,11 @@ input[type=button] {
 
   footer p {
       line-height: 1.285;
+  }
+
+  footer .social-icons  {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
